@@ -1,0 +1,7 @@
+<div class="container" [dropTarget]="dropTarget">
+  <div class="content" *ngIf="isOver$ | async"></div>
+  <div *ngIf="allDropList[index]" class="content" [dragSource]="dragSource">{{ allDropList[index].data?.name }}</div>
+
+</div>
+{{ this.currentItem?.data?.name | json }}
+
